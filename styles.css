@@ -1,0 +1,436 @@
+* {
+    padding: auto;
+    margin: 0;
+}
+
+body {
+    padding: auto;
+    margin: auto;
+    background-color: rgba(66, 66, 6, 0.986);
+}
+
+button {
+    color: rgba(66, 66, 6, 0.986);
+    background-color: rgb(219, 206, 196);
+    border: none;
+}
+
+@keyframes invisibleToVisible {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navigator-div {
+    background-color: rgb(219, 206, 196);
+    width: 100%;
+    height: 11vw;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    padding: 0 0 2vw 2.2vw;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.photoblog-name {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.2vw;
+}
+
+.photoblog-secondname {
+    font-family: 'Allison', cursive;
+    font-size: 1.7vw;
+    padding-left: 2vw;
+}
+
+.navigations {
+    margin: 0;
+    padding: 0 5vw 1vw 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+}
+
+.button-home,
+.button-portfolio,
+.button-contact {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.2vw;
+}
+
+.button-home:hover,
+.button-portfolio:hover,
+.button-contact:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.follow-your-soul {
+    position: relative;
+    display: flex;
+}
+
+.photo1-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.spring1 {
+    width: 100%;
+}
+
+.photo1 {
+    animation: revealPhoto1 2s forwards;
+}
+
+@keyframes revealPhoto1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-23.5%);
+    }
+}
+
+.spring2 {
+    max-width: 100%;
+    width: 60%;
+    object-fit: contain;
+    border-radius: 40% 40% 0px 0px;
+}
+
+.photo2 {
+    animation: revealPhoto2 2s forwards;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+
+@keyframes revealPhoto2 {
+    0% {}
+    100% {
+        opacity: 1;
+        transform: translateY(-75%);
+    }
+}
+
+.bloom {
+    position: absolute;
+    z-index: 9;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+    padding-top: 1, 7em;
+}
+
+.bloom-text-white {
+    font-family: 'The Nautigal', cursive;
+    color: rgb(219, 206, 196);
+    animation: zoomInBloomText 3s forwards;
+}
+
+.bloom-text-pink {
+    font-family: 'The Nautigal', cursive;
+    color: rgb(231, 119, 138);
+    animation: zoomInBloomText 3s forwards;
+}
+
+@keyframes zoomInBloomText {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 8vw;
+    }
+}
+
+.slogan {
+    position: absolute;
+    transform: translateX(80%);
+    width: 40%;
+    color: rgb(219, 206, 196);
+    font-size: 7vw;
+    display: flex;
+    justify-content: stretch;
+    font-family: 'Vujahday Script', cursive;
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#follow-your {
+    position: absolute;
+    padding-left: 0vw;
+    padding-top: 9vw;
+}
+
+#soul {
+    position: absolute;
+    padding-left: 6vw;
+    padding-top: 14vw;
+}
+
+#it-knows {
+    position: absolute;
+    padding-left: 12vw;
+    padding-top: 19vw;
+}
+
+#the {
+    position: absolute;
+    padding-left: 20vw;
+    padding-top: 24vw;
+}
+
+#way {
+    position: absolute;
+    padding-left: 25vw;
+    padding-top: 28vw;
+}
+
+.photo3-and-slogan2 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spring3 {
+    max-width: 100%;
+    width: 25%;
+    object-fit: contain;
+}
+
+.photo3 {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    padding-right: 4em;
+}
+
+.photo3.active {
+    animation: revealPhoto3 2s forwards;
+}
+
+@keyframes revealPhoto3 {
+    100% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+}
+
+.slogan2-and-3 {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vw;
+    align-items: center;
+}
+
+.slogan2 {
+    opacity: 0;
+    ;
+    width: 100%;
+    position: absolute;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan2.active {
+    animation: invisibleToVisible 3s forwards;
+}
+
+.horizontal-line-1 {
+    opacity: 0;
+    width: 20vw;
+    height: 20%;
+    border-bottom: solid 3px black;
+    padding-top: 15vw;
+}
+
+.horizontal-line-1.active {
+    animation: invisibleToVisible 2s forwards;
+}
+
+.slogan3 {
+    opacity: 0;
+    font-size: 2vw;
+}
+
+.slogan3.active {
+    animation: invisibleToVisible 5s forwards;
+}
+
+.photo4-and-slogan4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.spring4 {
+    width: 100%;
+    object-fit: contain;
+}
+
+.photo4 {
+    position: relative;
+    opacity: 0;
+    z-index: 8;
+    width: 60%;
+    padding-top: 40vw;
+    padding-left: 10vw;
+}
+
+.photo4.active {
+    animation: revealPhoto4 3s forwards;
+}
+
+@keyframes revealPhoto4 {
+    100% {
+        opacity: 1;
+        transform: scale(1.1) translateY(-5vw) translateX(-1vw);
+    }
+}
+
+.slogan4 {
+    opacity: 0;
+    position: absolute;
+    height: 50vw;
+    font-size: 4vw;
+    color: blanchedalmond;
+    padding-left: 10vw;
+}
+
+.slogan4.active {
+    animation: revealSlogan4 2s forwards;
+}
+
+@keyframes revealSlogan4 {
+    0% {
+        transform: rotate(90deg)translateY(-40vw);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(90deg) translateY(-46vw) translateX(6vw);
+    }
+}
+
+.slogan4-transparent {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    font-size: 4vw;
+    color: blanchedalmond;
+    transform: rotate(90deg);
+    padding-bottom: 115vw;
+}
+
+.slogan4-transparent.active {
+    animation: revealSlogan4Transparent 6s forwards;
+}
+
+@keyframes revealSlogan4Transparent {
+    100% {
+        opacity: 0.3;
+    }
+}
+
+video {
+    width: 100%;
+}
+
+.bg-video {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.seaPhotos {
+    position: absolute;
+    padding: 0 1vw 0 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.sea1 {
+    opacity: 0;
+    width: 90%;
+    height: 90%;
+}
+
+.sea2 {
+    opacity: 0;
+    width: 90%;
+}
+
+.sea3 {
+    opacity: 0;
+    width: 95%;
+    height: 90%;
+}
+
+.seaPhoto1,
+.seaPhoto2,
+.seaPhoto3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sea1.active,
+.sea2.active,
+.sea3.active {
+    animation: revealSeaPhotos 10s forwards;
+}
+
+@keyframes revealSeaPhotos {
+    0% {
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(219, 206, 196);
+    display: flex;
+    justify-content: center;
+}
+
+.button-gallery {
+    font-family: 'Courier Prime', monospace;
+    font-size: 30px;
+}
