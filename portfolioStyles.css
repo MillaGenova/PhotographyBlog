@@ -1,0 +1,307 @@
+html {
+    width: auto;
+}
+
+body {
+    margin: auto;
+    padding: auto;
+    width: 100%;
+}
+
+.portfolio-background {
+    position: relative;
+    background-color: blanchedalmond;
+}
+
+.welcoming {
+    height: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 5vw;
+    padding-top: 1vw;
+    padding-left: 3vw;
+}
+
+.ornament1 {
+    position: absolute;
+    width: 20vw;
+    height: 40vw;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 30vw;
+    margin-left: 7vw;
+    margin-top: 2vw;
+}
+
+.ornament2 {
+    position: absolute;
+    width: 70vw;
+    border: solid 1px black;
+    margin: 12vw 0 0 20vw;
+}
+
+.portfolioText {
+    position: absolute;
+    z-index: 2;
+    font-size: 8vw;
+    color: rgb(182, 141, 121);
+    margin: 4vw 0 0 55vw;
+}
+
+.portfolioText1 {
+    width: 13vw;
+    position: aboslute;
+    font-size: 2vw;
+    transform: translateX(80vw) translateY(-10vw);
+}
+
+.portfoliofPhoto {
+    opacity: 0;
+    position: absolute;
+    border-radius: 2vw;
+    z-index: 1;
+    width: 25%;
+    /* margin: 4vw 0 0 50vw; */
+    /* transform: translateX(50vw) translateY(4vw); */
+}
+
+.portfoliofPhoto.active {
+    animation: portfoliofPhotoIn 3s forwards;
+}
+
+@keyframes portfoliofPhotoIn {
+    0% {
+        opacity: 0;
+        transform: translateX(70vw) translateY(4vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(50vw) translateY(4vw);
+    }
+}
+
+.landscape {
+    height: 20vw;
+    position: relative;
+    margin: 0 0 10vw 10vw;
+    transform: translateY(-10vw);
+}
+
+.boxLandscapeText {
+    position: absolute;
+    border-bottom: solid 1px black;
+    margin: 1vw 0 0 20vw;
+    font-size: 5vw;
+}
+
+.landscapeText {
+    color: rgb(13, 20, 2);
+    padding-right: 5vw;
+}
+
+.landscapeText:hover {
+    color: rgb(177, 156, 126);
+    transition: all 0.5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.landscapePhoto {
+    opacity: 0;
+    position: absolute;
+    width: 45%;
+    border-radius: 3vw;
+}
+
+.landscapePhoto.active {
+    animation: landscapePhotoIn 2s forwards;
+}
+
+@keyframes landscapePhotoIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20vw) translateY(0vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0vw) translateY(0vw);
+    }
+}
+
+.floral {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.boxFloralText {
+    width: 30vw;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: solid 1px black;
+    font-size: 5vw;
+    transform: translateY(-10vw) translateX(-23.3vw);
+}
+
+.floralText {
+    color: rgb(13, 20, 2);
+    padding-right: 5vw;
+    /* transition: transform 2s; */
+}
+
+.floralText:hover {
+    color: rgb(177, 156, 126);
+    transition: all 0.5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.floralPhoto {
+    opacity: 0;
+    position: absolute;
+    width: 25%;
+    border-radius: 3vw;
+}
+
+.floralPhoto.active {
+    animation: floralPhotoIn 3s forwards;
+}
+
+@keyframes floralPhotoIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30vw) translateX(-10vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-15vw) translateX(-10vw);
+    }
+}
+
+.ornament3 {
+    width: 90vw;
+    height: 20vw;
+    border: solid 2px black;
+    border-radius: 5vw;
+    transform: translateY(-2vw) translateX(-5vw);
+}
+
+.boxMacroworldText {
+    width: 35vw;
+    position: absolute;
+    border-bottom: solid 1px black;
+    font-size: 5vw;
+    transform: translateY(-39vw) translateX(25vw);
+}
+
+.macroworldText:hover {
+    color: rgb(177, 156, 126);
+    transition: all 0.5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.macroworldPhoto {
+    opacity: 0;
+    width: 25%;
+    border-radius: 3vw;
+}
+
+.macroworldPhoto.active {
+    animation: macroPhotoIn 3s forwards;
+}
+
+@keyframes macroPhotoIn {
+    0% {
+        opacity: 0;
+        transform: translateX(10vw) translateY(10vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(10vw) translateY(-5vw);
+    }
+}
+
+.ornament4 {
+    width: 85%;
+    background-color: blueviolet;
+    border: solid 0.5px black;
+    transform: rotate(-45deg) translateY(-5vw);
+}
+
+.boxAestheticsText {
+    width: 35vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px black;
+    font-size: 5vw;
+    transform: translateY(-15vw) translateX(27vw);
+}
+
+.aestheticsText:hover {
+    color: rgb(177, 156, 126);
+    transition: all 0.5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.aestheticsPhoto {
+    opacity: 0;
+    width: 40%;
+    border-radius: 3vw;
+}
+
+.aestheticsPhoto.active {
+    animation: aestheticsPhotoIn 3s forwards;
+}
+
+@keyframes aestheticsPhotoIn {
+    0% {
+        opacity: 0;
+        transform: translateX(70vw) translateY(-5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(50vw) translateY(-5vw);
+    }
+}
+
+.boxAnimalsText {
+    width: 35vw;
+    position: absolute;
+    display: flex;
+    border-bottom: solid 1px black;
+    font-size: 5vw;
+    transform: translateY(-20vw) translateX(45vw);
+}
+
+.animalsText:hover {
+    color: rgb(177, 156, 126);
+    transition: all 0.5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+.animalsPhoto {
+    opacity: 0;
+    width: 40%;
+    border-radius: 3vw;
+}
+
+.animalsPhoto.active {
+    animation: animalPhotoIn 3s forwards;
+}
+
+@keyframes animalPhotoIn {
+    0% {
+        opacity: 0;
+        transform: translateX(0vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(10vw);
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 5vw;
+    margin-top: 2vw;
+    background-color: rgb(219, 206, 196);
+}
