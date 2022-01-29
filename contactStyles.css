@@ -1,0 +1,87 @@
+html{
+    width: auto;
+}
+body{
+    margin: auto;
+    padding: auto;
+    width: 100%;
+}
+.contacts-open {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.social-media-text{
+    height: 50vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 5vw;
+    padding: 1vw 5vw 0 0;
+    color: blanchedalmond;
+}
+.ornament1{
+    position: absolute;
+    width: 20vw;
+    height: 40vw;
+    border: solid 2px blanchedalmond;
+    border-radius: 30vw;
+    margin: 5vw 13vw 0 0;
+}
+
+.ornament2{
+    position: absolute;
+    width: 70vw;
+    border: solid 1px blanchedalmond;
+    margin: 25vw 10vw 0 0;
+}
+
+.contact-photo1{
+    position: absolute;
+    width: 30%;
+    transform: rotate(90deg);
+    margin: 12vw 60vw 0 0;
+}
+.social-medias{
+    height: 6vw;
+    margin: 2vw;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.px500{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-500px{
+    width: 15%;
+}
+.link-500px{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    transform: translateY(1.6vw);
+    /* margin-top: 5vw; */
+}
+.instagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-ig{
+    width: 10%;
+}
+.link-ig{
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+
+}
